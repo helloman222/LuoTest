@@ -34,7 +34,7 @@ public class UserServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("utf-8");
-	    String userName = request.getParameter("userName");
+	    String userName = request.getParameter("userName1");
         String userPassword = request.getParameter("userPassword");
         System.out.println(userName+","+userPassword);
         boolean flag = dao.login(userName,userPassword);
